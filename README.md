@@ -1,4 +1,7 @@
-CleanData
-=========
-
-Course project for the Getting and Cleaning Data course of Coursera
+The data for this study came from the data collected from the motion sensors present in a Samsung phone.The study was conducted on 30 subjects and are labelled as 1 to 30.  
+The original data set was randomly partitioned as two sets called training and test sets. These two files were read in and  the two sets were merged to form a single dataset with the help of rbind function. The head of the table is the training set and the tail is the test set.
+This data was further narrowed down by only considering the mean and standard deviation of each measurement. This was done by extracting the appropriate column numbers from the features file with the help of grep function. 
+The activities which were labelled from 1 to 6 were relabelled by their corresponding names by considering them a factor with six levels. 
+The subject and activity data which were present as separate files were merged to the data as the first and second columns using the cbind function. The resulting set is refered to as dataset in the programme.
+Further, from the features file provided with the data, the names corresponding to those measurements considered in the subset were extracted and relabelled in a clean manner by removing symbols and parantheses. The description of what these labels stand for are and how they were measured are given in the CODEBOOK.
+Finally, for the purpose of obtaining a tidy data set the average of these measurements where then calculated for each activity and each subject. This was done by splitting the data over the activities and the subject and then applying the mean function to it. The resulting arrays are bound together with the help of rbind to form a tidy data set. This tabulated data set is presented in the mean_measure table.

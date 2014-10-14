@@ -1,6 +1,6 @@
  				CODE BOOK - MEAN MEASUREMENTS
 
-The data for this assignment was taken from the data collected from the accelerometers and gyroscope present in the Samsung Galaxy S smartphone.
+This project source the data collected from the accelerometers and gyroscope present in the Samsung Galaxy S smartphone.
 The subject's name was transformed into an unique ID number ranging from 1 to 30. 
 The activities are a factor with six levels : Walking,Walking 	upstairs,Walking downstairs, Sitting, Standing and Laying.
 
@@ -13,12 +13,12 @@ The signals measured are 3-axial signals in the X, Y and Z directions.
 
 The original data set was partitioned as two sets called training and test sets. For this study, these two sets were merged to form a single dataset.
 For this project, only the data pertaining to the mean and standard deviation of each measurement have been considered.
-The average of these measurements where then calculated for each activity and each subject. a
+The average of these measurements where then calculated for each activity and each subject.
 This is tabulated and presented in the mean measurements table.
 The variables for these data are Subject, Activity and Average Measurements.
 The measurement names present in the original data were relabelled to make it easier to read as well as to avoid the use of any special characters.
 	 
-The description of the abbreviations used for the measurements are as follows:
+The description of the abbreviations used for the measurements are given below. All units of measurements are in Hz. 
 	
 1. tBodyAccMeanX:  Average acceleration of the body signal on the X-axis measured by the accelerometer in the time domain.
 2. tBodyAccMeanY:  Average acceleration of the body signal on the Y-axis measured by the accelerometer in the time domain.

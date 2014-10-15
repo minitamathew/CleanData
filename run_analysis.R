@@ -36,6 +36,8 @@ for (i in 1:length(variables)){
         var_name[i] <- gsub("-", "", var_name[i])
         var_name[i] <- gsub("mean", "Mean", var_name[i])
         var_name[i] <- gsub("std","Sd", var_name[i])
+        var_name[i] <- gsub("Acc", "Accelerometer", var_name[i])
+        var_name[i] <- gsub("Gyro", "Gyroscope", var_name[i])
 }
 
 ## part 1-4 of assignment- extracting data containing mean and sd variables
